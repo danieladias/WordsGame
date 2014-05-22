@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BBAAC7318EB581C009BE7A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBAAC7218EB581C009BE7A3 /* Foundation.framework */; };
+		3BBAAC7518EB581C009BE7A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBAAC7418EB581C009BE7A3 /* CoreGraphics.framework */; };
+		3BBAAC7718EB581C009BE7A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBAAC7618EB581C009BE7A3 /* UIKit.framework */; };
+		3BBAAC7918EB581C009BE7A3 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBAAC7818EB581C009BE7A3 /* SpriteKit.framework */; };
+		3BBAAC7F18EB581C009BE7A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAAC7D18EB581C009BE7A3 /* InfoPlist.strings */; };
+		3BBAAC8118EB581C009BE7A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAAC8018EB581C009BE7A3 /* main.m */; };
+		3BBAAC8518EB581C009BE7A3 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAAC8418EB581C009BE7A3 /* DDAppDelegate.m */; };
+		3BBAAC8818EB581C009BE7A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAAC8618EB581C009BE7A3 /* Main.storyboard */; };
+		3BBAAC9218EB581D009BE7A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAAC9118EB581D009BE7A3 /* Images.xcassets */; };
+		3BBAAC9918EB581D009BE7A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBAAC9818EB581D009BE7A3 /* XCTest.framework */; };
+		3BBAAC9A18EB581D009BE7A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBAAC7218EB581C009BE7A3 /* Foundation.framework */; };
+		3BBAAC9B18EB581D009BE7A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBAAC7618EB581C009BE7A3 /* UIKit.framework */; };
+		3BBAACA318EB581D009BE7A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAACA118EB581D009BE7A3 /* InfoPlist.strings */; };
+		3BBAACA518EB581D009BE7A3 /* WordsGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAACA418EB581D009BE7A3 /* WordsGameTests.m */; };
+		3BBAACC318EB587D009BE7A3 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAACAF18EB587D009BE7A3 /* sample.json */; };
+		3BBAACC418EB587D009BE7A3 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAACB018EB587D009BE7A3 /* words.txt */; };
+		3BBAACC518EB587D009BE7A3 /* DDTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAACB318EB587D009BE7A3 /* DDTile.m */; };
+		3BBAACC618EB587D009BE7A3 /* DDTileBoard+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAACB518EB587D009BE7A3 /* DDTileBoard+JSON.m */; };
+		3BBAACC718EB587D009BE7A3 /* DDTileBoard+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAACB718EB587D009BE7A3 /* DDTileBoard+Random.m */; };
+		3BBAACC818EB587D009BE7A3 /* DDTileBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAACB918EB587D009BE7A3 /* DDTileBoard.m */; };
+		3BBAACC918EB587D009BE7A3 /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAACBC18EB587D009BE7A3 /* DDViewController.m */; };
+		3BBAACCA18EB587D009BE7A3 /* DDBoardScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAACBF18EB587D009BE7A3 /* DDBoardScene.m */; };
+		3BBAACCB18EB587D009BE7A3 /* DDTileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAACC218EB587D009BE7A3 /* DDTileNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BBAAC9C18EB581D009BE7A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BBAAC6718EB581C009BE7A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BBAAC6E18EB581C009BE7A3;
+			remoteInfo = WordsGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BBAAC6F18EB581C009BE7A3 /* WordsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBAAC7218EB581C009BE7A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3BBAAC7418EB581C009BE7A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3BBAAC7618EB581C009BE7A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3BBAAC7818EB581C009BE7A3 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3BBAAC7C18EB581C009BE7A3 /* WordsGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordsGame-Info.plist"; sourceTree = "<group>"; };
+		3BBAAC7E18EB581C009BE7A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BBAAC8018EB581C009BE7A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BBAAC8218EB581C009BE7A3 /* WordsGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordsGame-Prefix.pch"; sourceTree = "<group>"; };
+		3BBAAC8318EB581C009BE7A3 /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
+		3BBAAC8418EB581C009BE7A3 /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
+		3BBAAC8718EB581C009BE7A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BBAAC9118EB581D009BE7A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3BBAAC9718EB581D009BE7A3 /* WordsGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBAAC9818EB581D009BE7A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3BBAACA018EB581D009BE7A3 /* WordsGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordsGameTests-Info.plist"; sourceTree = "<group>"; };
+		3BBAACA218EB581D009BE7A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BBAACA418EB581D009BE7A3 /* WordsGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsGameTests.m; sourceTree = "<group>"; };
+		3BBAACAF18EB587D009BE7A3 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		3BBAACB018EB587D009BE7A3 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		3BBAACB218EB587D009BE7A3 /* DDTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTile.h; sourceTree = "<group>"; };
+		3BBAACB318EB587D009BE7A3 /* DDTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTile.m; sourceTree = "<group>"; };
+		3BBAACB418EB587D009BE7A3 /* DDTileBoard+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDTileBoard+JSON.h"; sourceTree = "<group>"; };
+		3BBAACB518EB587D009BE7A3 /* DDTileBoard+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDTileBoard+JSON.m"; sourceTree = "<group>"; };
+		3BBAACB618EB587D009BE7A3 /* DDTileBoard+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDTileBoard+Random.h"; sourceTree = "<group>"; };
+		3BBAACB718EB587D009BE7A3 /* DDTileBoard+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDTileBoard+Random.m"; sourceTree = "<group>"; };
+		3BBAACB818EB587D009BE7A3 /* DDTileBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTileBoard.h; sourceTree = "<group>"; };
+		3BBAACB918EB587D009BE7A3 /* DDTileBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTileBoard.m; sourceTree = "<group>"; };
+		3BBAACBB18EB587D009BE7A3 /* DDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
+		3BBAACBC18EB587D009BE7A3 /* DDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
+		3BBAACBE18EB587D009BE7A3 /* DDBoardScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBoardScene.h; sourceTree = "<group>"; };
+		3BBAACBF18EB587D009BE7A3 /* DDBoardScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBoardScene.m; sourceTree = "<group>"; };
+		3BBAACC118EB587D009BE7A3 /* DDTileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTileNode.h; sourceTree = "<group>"; };
+		3BBAACC218EB587D009BE7A3 /* DDTileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTileNode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BBAAC6C18EB581C009BE7A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBAAC7518EB581C009BE7A3 /* CoreGraphics.framework in Frameworks */,
+				3BBAAC7718EB581C009BE7A3 /* UIKit.framework in Frameworks */,
+				3BBAAC7918EB581C009BE7A3 /* SpriteKit.framework in Frameworks */,
+				3BBAAC7318EB581C009BE7A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBAAC9418EB581D009BE7A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBAAC9918EB581D009BE7A3 /* XCTest.framework in Frameworks */,
+				3BBAAC9B18EB581D009BE7A3 /* UIKit.framework in Frameworks */,
+				3BBAAC9A18EB581D009BE7A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BBAAC6618EB581C009BE7A3 = {
+			isa = PBXGroup;
+			children = (
+				3BBAAC7A18EB581C009BE7A3 /* WordsGame */,
+				3BBAAC9E18EB581D009BE7A3 /* WordsGameTests */,
+				3BBAAC7118EB581C009BE7A3 /* Frameworks */,
+				3BBAAC7018EB581C009BE7A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BBAAC7018EB581C009BE7A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAAC6F18EB581C009BE7A3 /* WordsGame.app */,
+				3BBAAC9718EB581D009BE7A3 /* WordsGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BBAAC7118EB581C009BE7A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAAC7218EB581C009BE7A3 /* Foundation.framework */,
+				3BBAAC7418EB581C009BE7A3 /* CoreGraphics.framework */,
+				3BBAAC7618EB581C009BE7A3 /* UIKit.framework */,
+				3BBAAC7818EB581C009BE7A3 /* SpriteKit.framework */,
+				3BBAAC9818EB581D009BE7A3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BBAAC7A18EB581C009BE7A3 /* WordsGame */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAACAE18EB587D009BE7A3 /* Configuration */,
+				3BBAACB118EB587D009BE7A3 /* Models */,
+				3BBAACBA18EB587D009BE7A3 /* ViewControllers */,
+				3BBAAC8618EB581C009BE7A3 /* Main.storyboard */,
+				3BBAAC8318EB581C009BE7A3 /* DDAppDelegate.h */,
+				3BBAAC8418EB581C009BE7A3 /* DDAppDelegate.m */,
+				3BBAAC9118EB581D009BE7A3 /* Images.xcassets */,
+				3BBAAC7B18EB581C009BE7A3 /* Supporting Files */,
+			);
+			path = WordsGame;
+			sourceTree = "<group>";
+		};
+		3BBAAC7B18EB581C009BE7A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAAC7C18EB581C009BE7A3 /* WordsGame-Info.plist */,
+				3BBAAC7D18EB581C009BE7A3 /* InfoPlist.strings */,
+				3BBAAC8018EB581C009BE7A3 /* main.m */,
+				3BBAAC8218EB581C009BE7A3 /* WordsGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BBAAC9E18EB581D009BE7A3 /* WordsGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAACA418EB581D009BE7A3 /* WordsGameTests.m */,
+				3BBAAC9F18EB581D009BE7A3 /* Supporting Files */,
+			);
+			path = WordsGameTests;
+			sourceTree = "<group>";
+		};
+		3BBAAC9F18EB581D009BE7A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAACA018EB581D009BE7A3 /* WordsGameTests-Info.plist */,
+				3BBAACA118EB581D009BE7A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BBAACAE18EB587D009BE7A3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAACAF18EB587D009BE7A3 /* sample.json */,
+				3BBAACB018EB587D009BE7A3 /* words.txt */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3BBAACB118EB587D009BE7A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAACB218EB587D009BE7A3 /* DDTile.h */,
+				3BBAACB318EB587D009BE7A3 /* DDTile.m */,
+				3BBAACB418EB587D009BE7A3 /* DDTileBoard+JSON.h */,
+				3BBAACB518EB587D009BE7A3 /* DDTileBoard+JSON.m */,
+				3BBAACB618EB587D009BE7A3 /* DDTileBoard+Random.h */,
+				3BBAACB718EB587D009BE7A3 /* DDTileBoard+Random.m */,
+				3BBAACB818EB587D009BE7A3 /* DDTileBoard.h */,
+				3BBAACB918EB587D009BE7A3 /* DDTileBoard.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BBAACBA18EB587D009BE7A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAACBB18EB587D009BE7A3 /* DDViewController.h */,
+				3BBAACBC18EB587D009BE7A3 /* DDViewController.m */,
+				3BBAACBD18EB587D009BE7A3 /* MainScene */,
+				3BBAACC018EB587D009BE7A3 /* Nodes */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3BBAACBD18EB587D009BE7A3 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAACBE18EB587D009BE7A3 /* DDBoardScene.h */,
+				3BBAACBF18EB587D009BE7A3 /* DDBoardScene.m */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		3BBAACC018EB587D009BE7A3 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				3BBAACC118EB587D009BE7A3 /* DDTileNode.h */,
+				3BBAACC218EB587D009BE7A3 /* DDTileNode.m */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BBAAC6E18EB581C009BE7A3 /* WordsGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BBAACA818EB581D009BE7A3 /* Build configuration list for PBXNativeTarget "WordsGame" */;
+			buildPhases = (
+				3BBAAC6B18EB581C009BE7A3 /* Sources */,
+				3BBAAC6C18EB581C009BE7A3 /* Frameworks */,
+				3BBAAC6D18EB581C009BE7A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordsGame;
+			productName = WordsGame;
+			productReference = 3BBAAC6F18EB581C009BE7A3 /* WordsGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BBAAC9618EB581D009BE7A3 /* WordsGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BBAACAB18EB581D009BE7A3 /* Build configuration list for PBXNativeTarget "WordsGameTests" */;
+			buildPhases = (
+				3BBAAC9318EB581D009BE7A3 /* Sources */,
+				3BBAAC9418EB581D009BE7A3 /* Frameworks */,
+				3BBAAC9518EB581D009BE7A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BBAAC9D18EB581D009BE7A3 /* PBXTargetDependency */,
+			);
+			name = WordsGameTests;
+			productName = WordsGameTests;
+			productReference = 3BBAAC9718EB581D009BE7A3 /* WordsGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BBAAC6718EB581C009BE7A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Daniela Dias";
+				TargetAttributes = {
+					3BBAAC9618EB581D009BE7A3 = {
+						TestTargetID = 3BBAAC6E18EB581C009BE7A3;
+					};
+				};
+			};
+			buildConfigurationList = 3BBAAC6A18EB581C009BE7A3 /* Build configuration list for PBXProject "WordsGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BBAAC6618EB581C009BE7A3;
+			productRefGroup = 3BBAAC7018EB581C009BE7A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BBAAC6E18EB581C009BE7A3 /* WordsGame */,
+				3BBAAC9618EB581D009BE7A3 /* WordsGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BBAAC6D18EB581C009BE7A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBAAC7F18EB581C009BE7A3 /* InfoPlist.strings in Resources */,
+				3BBAACC318EB587D009BE7A3 /* sample.json in Resources */,
+				3BBAAC9218EB581D009BE7A3 /* Images.xcassets in Resources */,
+				3BBAACC418EB587D009BE7A3 /* words.txt in Resources */,
+				3BBAAC8818EB581C009BE7A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBAAC9518EB581D009BE7A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBAACA318EB581D009BE7A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BBAAC6B18EB581C009BE7A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBAACC618EB587D009BE7A3 /* DDTileBoard+JSON.m in Sources */,
+				3BBAACC918EB587D009BE7A3 /* DDViewController.m in Sources */,
+				3BBAACCB18EB587D009BE7A3 /* DDTileNode.m in Sources */,
+				3BBAACC518EB587D009BE7A3 /* DDTile.m in Sources */,
+				3BBAACC818EB587D009BE7A3 /* DDTileBoard.m in Sources */,
+				3BBAAC8518EB581C009BE7A3 /* DDAppDelegate.m in Sources */,
+				3BBAAC8118EB581C009BE7A3 /* main.m in Sources */,
+				3BBAACC718EB587D009BE7A3 /* DDTileBoard+Random.m in Sources */,
+				3BBAACCA18EB587D009BE7A3 /* DDBoardScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBAAC9318EB581D009BE7A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBAACA518EB581D009BE7A3 /* WordsGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BBAAC9D18EB581D009BE7A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BBAAC6E18EB581C009BE7A3 /* WordsGame */;
+			targetProxy = 3BBAAC9C18EB581D009BE7A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BBAAC7D18EB581C009BE7A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BBAAC7E18EB581C009BE7A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3BBAAC8618EB581C009BE7A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BBAAC8718EB581C009BE7A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BBAACA118EB581D009BE7A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BBAACA218EB581D009BE7A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BBAACA618EB581D009BE7A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3BBAACA718EB581D009BE7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BBAACA918EB581D009BE7A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordsGame/WordsGame-Prefix.pch";
+				INFOPLIST_FILE = "WordsGame/WordsGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3BBAACAA18EB581D009BE7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordsGame/WordsGame-Prefix.pch";
+				INFOPLIST_FILE = "WordsGame/WordsGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3BBAACAC18EB581D009BE7A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordsGame.app/WordsGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordsGame/WordsGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WordsGameTests/WordsGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3BBAACAD18EB581D009BE7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordsGame.app/WordsGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordsGame/WordsGame-Prefix.pch";
+				INFOPLIST_FILE = "WordsGameTests/WordsGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BBAAC6A18EB581C009BE7A3 /* Build configuration list for PBXProject "WordsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBAACA618EB581D009BE7A3 /* Debug */,
+				3BBAACA718EB581D009BE7A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BBAACA818EB581D009BE7A3 /* Build configuration list for PBXNativeTarget "WordsGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBAACA918EB581D009BE7A3 /* Debug */,
+				3BBAACAA18EB581D009BE7A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BBAACAB18EB581D009BE7A3 /* Build configuration list for PBXNativeTarget "WordsGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBAACAC18EB581D009BE7A3 /* Debug */,
+				3BBAACAD18EB581D009BE7A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BBAAC6718EB581C009BE7A3 /* Project object */;
+}
